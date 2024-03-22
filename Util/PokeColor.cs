@@ -6,23 +6,23 @@
         {
             string color = type switch
             {
-                "bug" => "#26de81",
-                "dragon" => "#26de81",
-                "electric" => "#26de81",
-                "fairy" => "#26de81",
-                "figthing" => "#26de81",
-                "fire" => "#26de81",
-                "flying" => "#26de81",
-                "grass" => "#26de81",
-                "ground" => "#26de81",
-                "ghost" => "#26de81",
-                "ice" => "#26de81",
-                "normal" => "#26de81",
-                "poison" => "#26de81",
-                "psychic" => "#26de81",
-                "rock" => "#26de81",
-                "water" => "#0190ff",
-                _ => "#26de81"
+                "bug" => "#A8B820",
+                "dragon" => "#7038F8",
+                "electric" => "#F8D030",
+                "fairy" => "#EE99AC",
+                "fighting" => "#C03028",
+                "fire" => "#F08030",
+                "flying" => "#A890F0",
+                "grass" => "#78C850",
+                "ground" => "#E0C068",
+                "ghost" => "#705898",
+                "ice" => "#98D8D8",
+                "normal" => "#A8A878",
+                "poison" => "#A040A0",
+                "psychic" => "#F85888",
+                "rock" => "#B8A038",
+                "water" => "#6890F0",
+                _ => "#68A090"
             };
 
             return color;

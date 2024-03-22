@@ -54,6 +54,7 @@ img {
     color: #ffffff;
     text-transform: uppercase;
     margin-right: 3px;
+    margin-top: 3px;
 }
 
 .app-title {
@@ -69,4 +70,5 @@ img {
     font-size: 13px;
     text-transform: uppercase;
     margin-right: 3px;
+    margin-top: 3px;
 }
