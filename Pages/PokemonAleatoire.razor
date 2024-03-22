@@ -1,0 +1,47 @@
+﻿@page "/pokemon-aleatoire"
+
+<PageTitle>Pokémon Aléatoire</PageTitle>
+
+<h1>Pokémon Légendaire Aléatoire</h1>
+
+<button class="btn btn-primary" @onclick="AfficherPokemonAleatoire">Afficher un Pokémon</button>
+
+@if (!string.IsNullOrEmpty(pokemonAleatoire))
+{
+    <p>Nom du Pokémon : @pokemonAleatoire</p>
+}
+
+@code {
+    private string pokemonAleatoire;
+    private string dernierPokemon = ""; 
+    private readonly List<string> pokemonsLegendaires = new List<string>
+    {
+    "Articuno", "Zapdos", "Moltres",
+    "Mewtwo", "Mew",
+    "Raikou", "Entei", "Suicune",
+    "Lugia", "Ho-Oh", "Celebi",
+    "Regirock", "Regice", "Registeel",
+    "Latias", "Latios", "Kyogre",
+    "Groudon", "Rayquaza", "Jirachi",
+    "Deoxys", "Uxie", "Mesprit",
+    "Azelf", "Dialga", "Palkia",
+    "Heatran", "Regigigas", "Giratina",
+    "Cresselia", "Phione", "Manaphy",
+    "Darkrai", "Shaymin", "Arceus",
+    };
+
+    private void AfficherPokemonAleatoire()
+    {
+        var random = new Random();
+        string pokemonSelectionne;
+
+        do
+        {
+            int index = random.Next(pokemonsLegendaires.Count);
+            pokemonSelectionne = pokemonsLegendaires[index];
+        } while (pokemonSelectionne == dernierPokemon); 
+
+        dernierPokemon = pokemonSelectionne; 
+        pokemonAleatoire = pokemonSelectionne;
+    }
+}
